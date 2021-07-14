@@ -55,6 +55,7 @@ body{
 
 .header-text a{
     text-decoration:none;
+    border-radius: 30px;
 }
 
 /* player area started */
@@ -100,7 +101,7 @@ body{
 .highlight{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
 
@@ -112,18 +113,86 @@ body{
     margin-bottom: 8px;
 }
 
-.header-photo img{
+.header-photo2 img{
     width: 567px;
     height: 427px;
+
 }
 
 .highlight-des{
-    width: 400px;
+    width: 80%;
     font-size: 16px;
     margin-bottom: 24px;
     margin-top: 0px;
     color:#6C6C6C;
 
+}
+
+
+
+
+/* newsletter area design */
+.newsletter{
+    background-color: rgb(43, 43, 43);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.newsletter .news-title h2{
+    font-size: 30px;
+    margin: 0px;
+}
+
+.newsletter .news-tagline h5{
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.form .email{
+        width: 300px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.form .button{
+    padding: 5px 30px;
+    color: white;
+    border-radius: 50px;
+    background-color: #E02C6D;
+}
+
+
+/* copa area started */
+.copa-chart{
+    display: flex;
+     align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+}
+.copa-featured img{
+    width: 567px;
+    height: 427px;
+    border-radius: 0px 150px 0px 0px;
+}
+
+.copa-title{
+    width: 30%;
+}
+.copa-title a{
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.copa-title h1{
+    font-size: 35px;
 }
 
 /* footer area started */
@@ -142,9 +211,169 @@ footer .logo img{
 
 .social-icon .social{
     font-size: 20px;
+    letter-spacing: 15px;
     
 }
 
 .copyright p{
     font-size: 18px;
 }
+
+/* media quaries */
+
+@media only screen and (max-width:688px) {
+    
+    .container{
+    display: flex;
+    height: 695px;
+    background-color:#2D25A0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+    
+}
+
+
+.header-text .title{
+    font-size: 36px;
+    color: white;
+    margin-bottom: 27px;
+}
+
+.header-photo img{
+    Width: 329px;
+    Height: 260px;
+}
+
+/* player area */
+.players-area{
+    display: grid;
+    grid-template-columns: 350px;
+    grid-row-gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 39px;
+    
+}
+
+
+/* highlights area */
+
+.highlight{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+}
+
+.highlight-title{
+    font-size: 30px;
+}
+
+.header-photo2 img{
+    width: 328px;
+    height: 248px;
+    margin-left: 15px;
+
+}
+
+
+
+/* button */
+.watch-live{
+    display: block;
+    width: 110px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+
+.copa-chart{
+     flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+.copa-chart img{
+    width: 328px;
+    height: 248px;
+    margin-left: 15px;
+
+}
+
+.copa-title h1{
+    font-size: 25px;
+}
+
+
+/* newsletter */
+
+.newsletter{
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.newsletter .news-title h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+.newsletter .news-tagline h5{
+    font-weight: 100;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.slogan p{
+    font-weight: 100;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.form .email{
+    width: 50%;
+    padding: 5px 5px;
+}
+    
+
+/* footer area started */
+
+
+footer .logo img{
+    width: 200px;
+    height: 60px;
+    margin: 20px 0px;
+}
+
+.social-icon .social{
+    font-size: 20px;
+    letter-spacing: 10px;
+    
+}
+
+.copyright p{
+    font-size: 16px;
+}
+    }
+
+
+@media screen (min-width:689px) and (max-width:992px) {
+
+    .players-area{
+    grid-template-columns: repeat(2, 1fr)
+    
+    
+}
+        
+    }    
+        
+        
+    
